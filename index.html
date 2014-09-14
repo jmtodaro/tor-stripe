@@ -115,6 +115,9 @@ display: block; min-height: 35px; padding-top: 10px;
 #stripeTxt {
  width: 60px;
  }
+.stripe {
+display: none;
+}
 </style>
 </head>
 <body>
@@ -176,6 +179,7 @@ portion of your purchase is donated to help keep us working.</p>
       var stripeSub = jQuery('option[name="stripeSub"]:selected').val();
       var stripeCur = jQuery('option[name="stripeCur"]:selected').val();
       var stripeSym;
+      jQuery('.stripe').css('display', 'initial');
       if( stripeSub != 0 ) {
 	  jQuery('.stripeTxt').css('visibility', 'hidden');
 	  jQuery('.stripeCur').css('visibility', 'hidden');
@@ -203,8 +207,8 @@ portion of your purchase is donated to help keep us working.</p>
       stripeVals();
   });
 </script>
-<div class="hundred toptwenty">
-	<div class="dbox donate stripe">
+<div class="hundred toptwenty stripe">
+	<div class="dbox donate">
     <a name="stripe"></a>
 		<h3>Donate via Stripe</h3>
 
