@@ -18,7 +18,8 @@
   <meta name="keywords" content="anonymity online, tor, tor project, censorship circumvention, traffic analysis, anonymous communications research">
   <style>
 .dbox.dsmall {
-	width: 300px;
+	width: 312px;
+/* border: 1px solid #DDD; */
 	}
 .dbox.donate select#t3,
 .dbox.donate select#stripeSub {
@@ -118,6 +119,13 @@ display: block; min-height: 35px; padding-top: 10px;
 .stripe {
 display: none;
 }
+.dbox.donate {
+/* border: 1px solid #DDD; */ 
+}
+.stripe div.dbox.donate {
+/* padding:30px 30px 65px; */
+padding:30px 30px 55px;
+}
 </style>
 </head>
 <body>
@@ -171,6 +179,7 @@ portion of your purchase is donated to help keep us working.</p>
     <li class="last"><a href="#cash">checks, money orders, or bank transfers</a></li>
   </ul>
     <p>Contact us at donations@torproject.org for more donation details.</p>
+
 <!-- BEGIN STRIPE -->
 <script type="text/javascript" src="./js/jquery.min.js"></script>
 <script src="https://checkout.stripe.com/checkout.js"></script>
@@ -180,6 +189,7 @@ portion of your purchase is donated to help keep us working.</p>
       var stripeCur = jQuery('option[name="stripeCur"]:selected').val();
       var stripeSym;
       jQuery('.stripe').css('display', 'initial');
+      jQuery('.noscript').css('display', 'none');
       if( stripeSub != 0 ) {
 	  jQuery('.stripeTxt').css('visibility', 'hidden');
 	  jQuery('.stripeCur').css('visibility', 'hidden');
@@ -447,7 +457,11 @@ href="https://www.dwolla.com/hub/thetorproject">Continue to Dwolla
 &raquo;</a></strong></p>
     </div>
 <!-- END DWOLLA -->
-
+<div class="hundred toptwenty noscript">
+	<div class="dbox donate" style="text-align:center;padding:10px 30px;border:1px solid #DDD;">
+	<p style="padding:0px;color:#888;"><em>Enable javascript to donate via <strong>Stripe</strong></em></p>
+	</div>
+</div>
 <!-- BEGIN BITCOIN -->
    <a id="bitcoin"></a>
    <div class="hundred toptwenty">
