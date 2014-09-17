@@ -194,7 +194,7 @@ portion of your purchase is donated to help keep us working.</p>
       if( stripeSub != 0 ) {
 	  jQuery('.stripeTxt').css('visibility', 'hidden');
 	  jQuery('.stripeCur').css('visibility', 'hidden');
-	  jQuery('.stripeAmounts').replaceWith('<ul class="stripeAmounts"><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="Platinum" checked="checked"><label for="Platinum">Platinum</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="Gold"><label for="Gold">Gold</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="Silver"><label for="Silver">Silver</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="Bronze"><label for="Bronze">Bronze</label></li></ul>');
+	  jQuery('.stripeAmounts').replaceWith('<ul class="stripeAmounts"><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="Monthly100" checked="checked"><label for="Monthly100">Monthly100</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="Monthly25"><label for="Monthly25">Monthly25</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="Monthly10"><label for="Monthly10">Monthly10</label></li></ul>');
       }else{
 	  jQuery('.stripeTxt').css('visibility', 'visible');
 	  if (stripeCur == 'USD') {
@@ -262,10 +262,9 @@ portion of your purchase is donated to help keep us working.</p>
 
 	document.getElementById('customButton').addEventListener('click', function(e) {
 	    var oneTime = 'pk_test_WxkC1Inr9VnMp6FkrfmoukbF';
-	    var subPlat = 'pk_test_WxkC1Inr9VnMp6FkrfmoukbF';
-	    var subGold = 'pk_test_WxkC1Inr9VnMp6FkrfmoukbF';
-	    var subSilv = 'pk_test_WxkC1Inr9VnMp6FkrfmoukbF';
-	    var subBron = 'pk_test_WxkC1Inr9VnMp6FkrfmoukbF';
+	    var sub10 = 'pk_test_WxkC1Inr9VnMp6FkrfmoukbF';
+	    var sub25 = 'pk_test_WxkC1Inr9VnMp6FkrfmoukbF';
+	    var sub100 = 'pk_test_WxkC1Inr9VnMp6FkrfmoukbF';
 	    var stripeSub = jQuery('option[name="stripeSub"]:selected').val();
 	    var stripeTxt = jQuery('#stripeTxt').val();
 	    var stripeRad = jQuery('input[name="stripeAmt"]:checked').val();
@@ -281,14 +280,12 @@ portion of your purchase is donated to help keep us working.</p>
 		stripeDesc = 'Recurring Donation';
 		stripeRem = 'false';
 		stripePan = 'Subscribe ' + stripeRad;
-		if (stripeRad == 'Platinum') {
-		    stripeKey = subPlat;
-		}else if (stripeRad == 'Gold'){
-		    stripeKey = subGold;
-		}else if (stripeRad == 'Silver'){
-		    stripeKey = subSilv;
-		}else if (stripeRad == 'Bronze'){
-		    stripeKey = subBron;
+		if (stripeRad == 'Monthly100') {
+		    stripeKey = sub100;
+		}else if (stripeRad == 'Monthly25'){
+		    stripeKey = sub25;
+		}else if (stripeRad == 'Monthly10'){
+		    stripeKey = sub10;
 		}
 	    } else {
 		if( !stripeTxt || stripeTxt == 0) {
