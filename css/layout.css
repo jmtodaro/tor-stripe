@@ -981,7 +981,7 @@ small {
 	width: 163px;
 	margin: 0px 0px 0px 10px;
 	border: 1px solid #ddd;
-}
+	}
 
 	.dbox p {
 		display: block;
@@ -1106,16 +1106,23 @@ small {
 		padding-left: 20px;
 		}
 
-	.dbox.donate select#t3 {
+	.dbox.donate ul.amounts li label,
+	.dbox.donate ul.stripeAmounts li label {
+		padding: 0px 0px 0px 5px;
+		}
+	.dbox.donate select#t3,
+	.dbox.donate select#stripeSub {
 		width: auto;
 		margin-bottom: 0px;
 		}
 
-	.dbox.donate ul.amounts {
+	.dbox.donate ul.amounts,
+	.dbox.donate ul.stripeAmounts {
 		width: auto;
 		}
 
-	.dbox.donate ul.amounts li {
+	.dbox.donate ul.amounts li,
+	.dbox.donate ul.stripeAmounts li {
 		display: inline-block;
 		margin-left: 15px;
 		}
@@ -1138,7 +1145,7 @@ small {
 .dbox.dsmall {
 	position: relative;
 	display: inline-block;
-	width: 170px;
+	width: 312px;
 	height: 140px;
 	text-align: center;
 	margin: 0px 10px;
