@@ -1,162 +1,12 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <title>Tor Project: Donate to Tor</title>
-  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="./css/master.css">
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" type="text/css" href="./css/ie8-and-down.css">
-  <![endif]-->
-  <!--[if lte IE 7]>
-  <link rel="stylesheet" type="text/css" href="./css/ie7-and-down.css">
-  <![endif]-->
-  <!--[if IE 6]>
-  <link rel="stylesheet" type="text/css" href="./css/ie6.css">
-  <![endif]-->
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="author" content="The Tor Project, Inc.">
-  <meta name="keywords" content="anonymity online, tor, tor project, censorship circumvention, traffic analysis, anonymous communications research">
-  <style>
-.dbox.dsmall {
-	width: 312px;
-/* border: 1px solid #DDD; */
-	}
-.dbox.donate select#t3,
-.dbox.donate select#stripeSub {
-width: auto;
-margin-bottom: 0px;
-}
-.dbox.donate ul.amounts,
-.dbox.donate ul.stripeAmounts {
-width: auto;
-}
-.dbox.donate ul.amounts li,
-.dbox.donate ul.stripeAmounts li {
-display: inline-block;
-margin-left: 15px;
-}
-button {
-float: left;
-}
-.dbox.donate ul.amounts li label,
-.dbox.donate ul.stripeAmounts li label {
-padding: 0px 0px 0px 5px;
-}
-#customButton {
-overflow: hidden;
-display: inline-block;
-visibility: visible !important;
-background-image: -webkit-linear-gradient(#28a0e5,#015e94);
-background-image: -moz-linear-gradient(#28a0e5,#015e94);
-background-image: -ms-linear-gradient(#28a0e5,#015e94);
-background-image: -o-linear-gradient(#28a0e5,#015e94);
-background-image: -webkit-linear-gradient(#28a0e5,#015e94);
-background-image: -moz-linear-gradient(#28a0e5,#015e94);
-background-image: -ms-linear-gradient(#28a0e5,#015e94);
-background-image: -o-linear-gradient(#28a0e5,#015e94);
-background-image: linear-gradient(#28a0e5,#015e94);
--webkit-font-smoothing: antialiased;
-border: 0;
-padding: 1px;
-text-decoration: none;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
--ms-border-radius: 5px;
--o-border-radius: 5px;
-border-radius: 5px;
--webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2);
--moz-box-shadow: 0 1px 0 rgba(0,0,0,0.2);
--ms-box-shadow: 0 1px 0 rgba(0,0,0,0.2);
--o-box-shadow: 0 1px 0 rgba(0,0,0,0.2);
-box-shadow: 0 1px 0 rgba(0,0,0,0.2);
--webkit-touch-callout: none;
--webkit-tap-highlight-color: transparent;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
--o-user-select: none;
-user-select: none;
-cursor: pointer;
-}
-#customButton span {
-display: block;
-position: relative;
-padding: 0 12px;
-height: 30px;
-line-height: 30px;
-background: #1275ff;
-background-image: -webkit-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
-background-image: -moz-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
-background-image: -ms-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
-background-image: -o-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
-background-image: -webkit-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
-background-image: -moz-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
-background-image: -ms-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
-background-image: -o-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
-background-image: linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
-font-size: 14px;
-color: #fff;
-font-weight: bold;
-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
--webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
--moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
--ms-box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
--o-box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
-box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
--webkit-border-radius: 4px;
--moz-border-radius: 4px;
--ms-border-radius: 4px;
--o-border-radius: 4px;
-border-radius: 4px;
-}
-.stripeTxt {
-display: block; min-height: 35px; padding-top: 10px;
-}
-#stripeTxt {
- width: 60px;
- }
-.stripe {
-display: none;
-}
-.dbox.donate {
-/* border: 1px solid #DDD; */ 
-}
-.stripe div.dbox.donate {
-/* padding:30px 30px 65px; */
-padding:30px 30px 69px;
-}
-</style>
-</head>
-<body>
-<div id="wrap">
-  <div id="header">
-    <h1 id="logo"><a href="../index.html.en">Tor</a></h1>
-      <div id="nav">
-        <ul>
-        <li><a href="../index.html.en">Home</a></li>
-<li><a href="../about/overview.html.en">About Tor</a></li>
-<li><a href="../docs/documentation.html.en">Documentation</a></li>
-<li><a href="../press/press.html.en">Press</a></li>
-<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
-<li><a href="../about/contact.html.en">Contact</a></li>
-        </ul>
-      </div>
-      <!-- END NAV -->
-      <div id="calltoaction">
-        <ul>
-          <li class="donate"><a href="../download/download-easy.html.en">Download</a></li>
-<li class="donate"><a href="../getinvolved/volunteer.html.en">Volunteer</a></li>
-<li class="donate"><a class="active" href="../donate/donate.html.en">Donate</a></li>
-        </ul>
-      </div>
-      <!-- END CALLTOACTION -->
-  </div>
-  <!-- END HEADER -->
+## translation metadata
+# Revision: $Revision: 26722 $
+# Translation-Priority: 3-low
+
+#include "head.wmi" TITLE="Tor Project: Donate to Tor" CHARSET="UTF-8"
 <div id="content" class="clearfix">
   <div id="breadcrumbs">
-    <a href="../index.html.en">Home &raquo; </a>
-    <a href="../donate/donate.html.en">Donate</a>
+    <a href="<page index>">Home &raquo; </a>
+    <a href="<page donate/donate>">Donate</a>
   </div>
 <div id="maincol">
   <h1>Make A Donation</h1>
@@ -167,12 +17,13 @@ padding:30px 30px 69px;
    US; or who pay taxes in countries with reciprocity with the US on
    charitable donations. Our tax ID number is 20-8096820. We are listed on
   <a href="http://www2.guidestar.org/organizations/20-8096820/tor-project.aspx">GuideStar</a>.</p>
-   <p>We're happy to have you shop and indirectly support us via
+
+   <p>We're happy to have you shop and indirectly support us via 
 <a href="http://smile.amazon.com/ch/20-8096820">Amazon Smile</a>. A
 portion of your purchase is donated to help keep us working.</p>
+
    We're happy to accept direct donations via:</p>
   <ul class="hlist">
-    <li><a href="#stripe">Stripe</a></li>
     <li><a href="#paypal">Paypal</a></li>
     <li><a href="#amazon">Amazon Payments</a></li>
     <li><a href="#dwolla">Dwolla</a></li>
@@ -180,11 +31,12 @@ portion of your purchase is donated to help keep us working.</p>
     <li class="last"><a href="#cash">checks, money orders, or bank transfers</a></li>
   </ul>
     <p>Contact us at donations@torproject.org for more donation details.</p>
-
 <!-- BEGIN STRIPE -->
-<script type="text/javascript" src="./js/jquery.min.js"></script>
+<!-- load jQuery & Stripe Checkout js -->
+<script type="text/javascript" src="$(DOCROOT)/js/jquery.min.js"></script>
 <script src="https://checkout.stripe.com/checkout.js"></script>
 <script>
+// Detect changes to stripe options and update values
   function stripeVals(){
       var stripeSub = jQuery('option[name="stripeSub"]:selected').val();
       var stripeCur = jQuery('option[name="stripeCur"]:selected').val();
@@ -206,9 +58,8 @@ portion of your purchase is donated to help keep us working.</p>
 	  }else if (stripeCur == 'JPY') {
 	    stripeSym = '&yen;';
 	  }	
-	  jQuery('.stripeTxt').replaceWith('<span class="stripeTxt"><label for="custom">or enter a donation amount: ' + stripeSym + '</label><input type="number" id="stripeTxt" data-stripe="amount" class="amount" name="stripeAmt" min="0" step="5"><label for="custom">.00</label></span>');
+	  jQuery('.stripeTxt').replaceWith('<span class="stripeTxt"><label for="custom">or enter a donation amount: ' + stripeSym + '</label><input type="number" id="stripeTxt" data-stripe="amount" class="amount" name="stripeAmt" min="0" step="5" style="width:60px;"><label for="custom">.00</label></span>');
 	  jQuery('.stripeCur').css('visibility', 'visible');
-//	  jQuery('.stripeAmounts').replaceWith('<ul class="stripeAmounts"><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="2000"><label for="2000">' + stripeSym + ' 2000</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="1000"><label for="1000">' + stripeSym + ' 1000</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="500"><label for="500">' + stripeSym + ' 500</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="250"><label for="250">' + stripeSym + ' 250</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="100" checked="checked"><label for="100">' + stripeSym + ' 100</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="50"><label for="50">' + stripeSym + ' 50</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="20"><label for="20">' + stripeSym + ' 20</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="10"><label for="10">' + stripeSym + ' 10</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="5"><label for="5">' + stripeSym + ' 5</label></li></ul>');
 	  jQuery('.stripeAmounts').replaceWith('<ul class="stripeAmounts"><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="2000"><label for="2000">2000</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="1000"><label for="1000">1000</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="500"><label for="500">500</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="250"><label for="250">250</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="100" checked="checked"><label for="100">100</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="50"><label for="50">50</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="20"><label for="20">20</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="10"><label for="10">10</label></li><li><input type="radio" class="radio" name="stripeAmt" data-stripe="amount" value="5"><label for="5">5</label></li></ul>');
       }
   }
@@ -219,53 +70,53 @@ portion of your purchase is donated to help keep us working.</p>
   });
 </script>
     <a id="stripe"></a>
-<div class="hundred toptwenty stripe">
-	<div class="dbox donate">
-		<h3>Donate via Stripe</h3>
-
-<form action="" method="POST">
-    <p class="type">
-	<label for="type">Donation Type:</label>
-	<select id="stripeSub">
-	    <option name="stripeSub" value="0" selected="selected">One-time Donation</option>
-	    <option name="stripeSub" value="M">Monthly Subscription</option>
-	</select>
-    </p>
-    <div class="drow">
-	<div>
-	    <span>
-		  <select class="stripeCur">
-			<option name="stripeCur" value="USD" selected="selected">$</option>
-			<option name="stripeCur" value="EUR">&euro;</option>
-			<option name="stripeCur" value="GBP">&pound;</option>
-			<option name="stripeCur" value="JPY">&yen;</option>
+<div class="hundred toptwenty stripe" style="display: none;">
+	<div class="dbox donate" style="padding:30px 30px 69px;">
+	  <h3>Donate via Stripe</h3>
+	  <form action="" method="POST">
+	      <p class="type">
+		  <label for="type">Donation Type:</label>
+		  <select id="stripeSub">
+		      <option name="stripeSub" value="0" selected="selected">One-time Donation</option>
+		      <option name="stripeSub" value="M">Monthly Subscription</option>
 		  </select>
-	    </span>
-	    <ul class="stripeAmounts">
-	    </ul>
-	</div>
-	<div><span class="stripeTxt"></span><button id="customButton"><span style="display: block; min-height: 30px;">Donate via Stripe</span></button></div>
-
-
-    </div>
-  
-
-    <script>
-	var handler = StripeCheckout.configure({
+	      </p>
+	      <div class="drow">
+		  <div>
+		      <span>
+			    <select class="stripeCur">
+				  <option name="stripeCur" value="USD" selected="selected">$</option>
+				  <option name="stripeCur" value="EUR">&euro;</option>
+				  <option name="stripeCur" value="GBP">&pound;</option>
+				  <option name="stripeCur" value="JPY">&yen;</option>
+			    </select>
+		      </span>
+		      <ul class="stripeAmounts">
+		      </ul>
+		  </div>
+		  <div><span class="stripeTxt" style="display: block; min-height: 35px; padding-top: 10px;"></span><button id="stripeButton"><span>Donate via Stripe</span></button></div>
+	      </div>
+<script>
+// Based on code from https://stripe.com/docs/checkout#integration-custom
+    var handler = StripeCheckout.configure({
 	    key: '',
-	    image: './images/2014-tor-onion-shaded.png',
+	    image: '$(IMGROOT)/2014-tor-onion-shaded.png',
 	    token: function(token) {
 	      // Use the token to create the charge with a server-side script.
 	      // You can access the token ID with `token.id`
-	      window.location.href = "./thankyou.html";
+	      window.location.href = "$(DOCROOT)/donate/thankyou.html.en";
 	    }
 	});
 
-	document.getElementById('customButton').addEventListener('click', function(e) {
-	    var oneTime = 'pk_test_WxkC1Inr9VnMp6FkrfmoukbF';
-	    var sub10 = 'pk_test_WxkC1Inr9VnMp6FkrfmoukbF';
-	    var sub25 = 'pk_test_WxkC1Inr9VnMp6FkrfmoukbF';
-	    var sub100 = 'pk_test_WxkC1Inr9VnMp6FkrfmoukbF';
+	document.getElementById('stripeButton').addEventListener('click', function(e) {
+
+	// Insert plan keys here
+	    var oneTime = 'pk_test_K2bGg87pthxNndczsmaNvaWq';
+	    var sub10 = 'pk_test_K2bGg87pthxNndczsmaNvaWq';
+	    var sub25 = 'pk_test_K2bGg87pthxNndczsmaNvaWq';
+	    var sub100 = 'pk_test_K2bGg87pthxNndczsmaNvaWq';
+	// End plan keys
+	
 	    var stripeSub = jQuery('option[name="stripeSub"]:selected').val();
 	    var stripeTxt = jQuery('#stripeTxt').val();
 	    var stripeRad = jQuery('input[name="stripeAmt"]:checked').val();
@@ -320,12 +171,12 @@ portion of your purchase is donated to help keep us working.</p>
 	    });
 	    e.preventDefault();
 	});
-    </script>
-</form>
+</script>
+	  </form>
 	</div>
   </div>
-  <!-- END STRIPE -->
-  <!-- BEGIN PAYPAL -->
+<!-- END STRIPE -->
+<!-- BEGIN PAYPAL -->
 <script type="text/javascript">
 function displayVals() {
       var t3 = jQuery('#t3').val();
@@ -354,13 +205,16 @@ function displayVals() {
 		jQuery('#ppinfo').replaceWith('<small id="ppinfo">Does Not Require a PayPal Account</small>');
      }
 }
+
 jQuery(function(){
  	jQuery("input[@name='amount']:checked").change(displayVals);
  	jQuery("#amount").change(displayVals);
  	jQuery("#t3").change(displayVals);
  	displayVals();
+
 });
 </script>
+
   <div class="hundred toptwenty">
 	<div class="dbox donate">
     <a name="paypal"></a>
@@ -400,8 +254,8 @@ Account</small>
 		   <div>
 		    <label for="custom">or enter a donation amount:</label><input type="text" id="amount" class="amount" name="amount">
 			 <input type="hidden" id="a3" name="a3" value="0">
-<!-- <input class="donate-btn" type="submit" name="donate" value="Donate" alt="Subscribe to Tor with PayPal - it's fast, free and secure!"> -->
-	       <input type="image" src="./images/paypal-donate-button.gif" name="submit" alt="Subscribe to Tor with PayPal - it's fast, free and secure!">
+<!--			 <input class="donate-btn" type="submit" name="donate" value="Donate" alt="Subscribe to Tor with PayPal - it's fast, free and secure!"> -->
+	       <input type="image" src="$(IMGROOT)/paypal-donate-button.gif" name="submit" alt="Subscribe to Tor with PayPal - it's fast, free and secure!"> 
 		   </div>
 		     <input type="hidden" id="p3" name="p3" value="1">
 		     <input type="hidden" name="sra" value="1">
@@ -418,13 +272,15 @@ Account</small>
 	</div>
   </div>
 <!-- END PAYPAL -->
+<!-- STRIPE NOSCRIPT -->
 <div class="hundred toptwenty noscript">
     <a id="stripe"></a>
 	<div class="dbox donate" style="text-align:center;padding:10px 30px;border:1px solid #DDD;">
 	<p style="padding:0px;color:#845384;"><em>Enable javascript to donate via <strong>Stripe</strong></em></p>
 	</div>
 </div>
-<div class="hundred toptwenty">
+<!-- END STRIPE NOSCRIPT -->
+  <div class="hundred toptwenty">
 <!-- BEGIN AMAZON -->
     <a name="amazon"></a>
 	 <div class="dbox dsmall">
@@ -434,7 +290,7 @@ Account</small>
 		    <div>
 		     <label for="amazon">&#x24;</label>
 		     <input type="text" name="amount" size="6" value="20">
-			  <input class="donate-btn" type="image" src="./images/golden_small_donate_withmsg_whitebg.gif">
+			  <input class="donate-btn" type="image" src="$(IMGROOT)/golden_small_donate_withmsg_whitebg.gif">
 		    </div>
 		    <input type="hidden" name="immediateReturn" value="1">
 		    <input type="hidden" name="collectShippingAddress" value="0">
@@ -481,14 +337,14 @@ href="https://www.dwolla.com/hub/thetorproject">Continue to Dwolla
             <li id="orderID" class="control-group">
               <label class="control-label" style="width: 40px">Email:</label>
               <div class="controls" style="margin-left: 60px">
-                <input name="orderID" type="email" class="input input-xlarge" placeholder="Email address (optional)" maxlength="50" autocapitalize="off" autocorrect="off"><br>
+                <input name="orderID" type="email" class="input input-xlarge" placeholder="Email address (optional)" maxlength=50 autocapitalize=off autocorrect=off><br>
               </div>
             </li>
             <li id="price" class="control-group">
               <label class="control-label" style="width: 40px">Amount:</label>
               <div class="controls" style="margin-left: 60px">
-                <input name="price" type="number" class="noscroll" value="10.00" placeholder="Amount" maxlength="10" min="0.01" step="0.01" style="width: 39%">
-                <select name="currency" value="" style="width: 49%">
+                <input name="price" type="number" class="noscroll" value="10.00" placeholder="Amount" maxlength="10" min="0.01" step="0.01" style="width: 39%"  />
+                <select name="currency" value="" style="width: 49%" >
                   <option value="USD" selected="selected">USD</option>
                   <option value="BTC">BTC</option>
                   <option value="EUR">EUR</option>
@@ -524,14 +380,14 @@ href="https://www.dwolla.com/hub/thetorproject">Continue to Dwolla
                   <option value="THB">THB</option>
                   <option value="TRY">TRY</option>
                   <option value="ZAR">ZAR</option>
-                </select>
+                </select/>
               </div>
             </li>
           </ul>
           <br>
           <input type="hidden" name="data" value="iH+sCoKQo5J52hkEzWcMi8+PRt78/89lcSU9GnapWfWL6thyubtDCahTUqa2JTlj6RQrQySkZAoFvK05yifMwfx5V87JJuoaDlHUsZR9ppzkklmzHpKJ4TG5M0zNVcKfNBfyopdfTFbzpOXM2FDppqmU7njsRUF1EZPa0K7SIxpv4lNKSPn1PyjVKVxjnpFE0AZ1Qa75VwZnS+rBNNfwxPsgSz+Oa2Twe226FmJJrLtPuBteFfHAIWh6QS5JnpOn4ScMFph0zjixutmunMAjKw==">
           <div style="margin: auto; width: 100%; text-align: center">
-            <input name="submit" src="./images/bitpay-donate-md.png" type="image" style="width: auto" alt="BitPay" border="0">
+            <input name="submit" src="$(IMGROOT)/bitpay-donate-md.png" type="image" style="width: auto" alt="BitPay" border="0">
           </div>
         </fieldset>
       </form>
@@ -581,102 +437,11 @@ href="https://www.dwolla.com/hub/thetorproject">Continue to Dwolla
 <!-- END TRANSFER -->
 <!-- END MAINCOL -->
 </div>
-  <div id="sidecol">
-<div class="img-shadow">
-  <div id="sidenav">
-    <h2>Help another way:</h2>
-    <ul>
-<li class="active"><a class="active" href="../donate/donate.html.en">Monetary Donations</a></li>
-<li><a href="../donate/donate-hardware.html.en">Hardware Donations</a></li>
-<li><a href="../donate/donate-service.html.en">Service Donations</a></li>
-<li><a href="../donate/matching-program.html.en">Matching Program</a></li>
-<li><a href="../donate/become-sponsor.html.en">Become a Sponsor</a></li>
-</ul>
-  </div>
-  <!-- END SIDENAV -->
-</div>
-<!-- END IMG-SHADOW -->
-<div class="img-shadow">
-  <div class="important-infoblock">
-    <h2>What happens to my donation?</h2>
-    <p>If you've just donated, thank you for your donation. Your funds
-    are deposited into our general fund. You join thousands of other
-    individual <a href="../about/sponsors.html.en">sponsors</a> in funding
-    the future of Tor and online anonymity. </p>
-    <p>Our <a href="../about/financials.html.en">financial documents</a>
-    are available for your review.</p>
-  </div>
-</div>
-<div class="img-shadow">
-  <div class="important-infoblock">
-    <h2>Mission Statement</h2>
-    <p>The Tor Project is organized and operated exclusively for
-    scientific, charitable and educational purposes within the meaning
-    of section 501(c)(3) of the Internal Revenue Code, including (a)
-    to develop, improve and distribute free, publicly available tools
-    and programs that promote free speech, free expression, civic
-    engagement and privacy rights online; (b) to conduct scientific
-    research regarding, and to promote the use of and knowledge about,
-    such tools, programs and related issues around the world; (c) to
-    educate the general public around the world about privacy rights
-    and anonymity issues connected to Internet use; and (d) to carry out
-    and conduct such other activities related to the stated mission.</p>
-  </div>
-</div>
-<!-- END INFOBLOCK -->
+  <div id = "sidecol">
+#include "side-donate.wmi"
+#include "info.wmi"
   </div>
   <!-- END SIDECOL -->
 <!-- END CONTENT -->
 </div>
-    <div id="footer">
-    	<div class="onion"><img src="./images/onion.jpg" alt="Tor" width="78" height="118"></div>
-      <div class="about">
-    <p>Trademark, copyright notices, and rules for use by third parties can be found
-    <a href="../docs/trademark-faq.html.en">in our FAQ</a>.</p>
-<!--
-        Last modified: Sun 20 Apr 2014 21:00:11 -0500
-        Last compiled: Fri Sep 12 2014 16:41:00 -0500
--->
-      </div>
-      <!-- END ABOUT -->
-      <div class="col first">
-      	<h4>About Tor</h4>
-        <ul>
-          <li><a href="../about/overview.html.en">What Tor Does</a></li>
-          <li><a href="../about/torusers.html.en">Users of Tor</a></li>
-          <li><a href="../about/corepeople.html.en">Core Tor People</a></li>
-          <li><a href="../about/sponsors.html.en">Sponsors</a></li>
-          <li><a href="../about/contact.html.en">Contact Us</a></li>
-        </ul>
-      </div>
-      <!-- END COL -->
-      <div class="col">
-      	<h4>Get Involved</h4>
-        <ul>
-          <li><a href="../donate/donate.html.en">Donate</a></li>
-          <li><a href="../docs/documentation.html.en#MailingLists">Mailing Lists</a></li>
-          <li><a href="../getinvolved/mirrors.html.en">Mirrors</a></li>
-          <li><a href="../docs/hidden-services.html.en">Hidden Services</a></li>
-          <li><a href="../getinvolved/translation.html.en">Translations</a></li>
-        </ul>
-      </div>
-      <!-- END COL -->
-      <div class="col">
-      	<h4>Documentation</h4>
-        <ul>
-          <li><a href="../docs/tor-manual.html.en">Manuals</a></li>
-          <li><a href="../docs/documentation.html.en">Installation Guides</a></li>
-          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
-          <li><a href="../docs/faq.html.en">General Tor FAQ</a></li>
-        </ul>
-      </div>
-        <div class="col">
-        <a href="http://internetdefenseleague.org/"><img src="./images/InternetDefenseLeague-footer-badge.png" alt="Internet Defense League" width="125" height="125"></a>
-        </div>
-      <!-- END COL -->
-    </div>
-    <!-- END FOOTER -->
-  </div>
-  <!-- END WRAP -->
-</body>
-</html>
+#include <foot.wmi>
